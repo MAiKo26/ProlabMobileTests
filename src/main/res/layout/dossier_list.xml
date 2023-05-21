@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/date_du"
+                android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:onClick="setDate"
+                    android:layout_marginLeft="8dp"
+                    android:text="1999-01-01"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/au"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDateAu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:onClick="setDateAu"
+                    android:text="1999-12-31"
+                    android:textSize="14sp" />
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/searchFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:textSize="14sp"
+            android:background="@android:drawable/editbox_background"
+            android:iconifiedByDefault="true"
+            android:queryHint="@string/rech_par_pat"
+            android:searchIcon="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dossier_list"
+        android:name="com.sama_consulting.prolabmobile5.DossierListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:context="com.sama_consulting.prolabmobile5.DossierListActivity"
+        tools:listitem="@layout/dossier_list_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sama_consulting.prolabmobile5.ResultatDosActivity">
+
+    <item
+        android:id="@+id/action_arriere"
+        android:icon="@drawable/ic_arrow_back"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/dossier_pr_c_dent"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_avant"
+        android:icon="@drawable/ic_arrow_forward"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        android:title="@string/dossier_suivant"
+        android:visible="true"/>
+
+</menu>

@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="text"
+        android:key="server_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/serveraddr" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/port"
+        android:inputType="number"
+        android:key="port"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/numport" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/version"
+        android:inputType="text"
+        android:key="prolabVersion"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/prolabver" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="text"
+        android:defaultValue="@string/db_user"
+        android:key="dbuser"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/nomuserbd" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:key="dbpassword"
+        android:defaultValue="@string/db_pwd"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pwdbd" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="text"
+        android:key="userName"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/userprolab" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textPassword"
+        android:key="userPassword"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pwdprolab" />
+</PreferenceScreen>

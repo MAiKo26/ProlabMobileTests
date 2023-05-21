@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/libelleGroupe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="2dp"
+        android:text="Groupe"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/lyResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lydetailres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:alpha="50"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_gravity="top">
+                <ImageView
+                    android:id="@+id/imgVerif"
+                    android:layout_width="16dp"
+                    android:layout_margin="1dp"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/abreviation"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="1dp"
+                    android:capitalize="sentences"
+                    android:freezesText="false"
+                    android:text="abreviations"
+                    android:maxLength="4"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/libelle"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:capitalize="sentences"
+                    android:freezesText="false"
+                    android:text="libelle"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/resultat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:minWidth="50dp"
+                    android:maxWidth="120dp"
+                    android:freezesText="false"
+                    android:text="resultat"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/unite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:capitalize="sentences"
+                    android:freezesText="false"
+                    android:layout_margin="1dp"
+                    android:text="unite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/vu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:capitalize="sentences"
+                    android:freezesText="false"
+                    android:gravity="left"
+                    android:text="vu"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lyAnteriorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp" />-->
+
+                    <TextView
+                        android:id="@+id/ant"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:capitalize="sentences"
+                        android:freezesText="false"
+                        android:text="@string/ant_riotit"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="10sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/commentaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:capitalize="sentences"
+                android:freezesText="false"
+                android:gravity="start"
+                android:text="commentaire"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
