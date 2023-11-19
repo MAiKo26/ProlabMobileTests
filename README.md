@@ -22,11 +22,6 @@ The project is structured as follows:
     - [VerifyUnvalidateFunctionality.java](src/androidTest/java/com/sama_consulting/prolabmobile5/VerifyUnvalidateFunctionality.java): Test for unvalidated functionality.
     - [VerifyValidateFunctionality.java](src/androidTest/java/com/sama_consulting/prolabmobile5/VerifyValidateFunctionality.java): Test for validated functionality.
 
-  - `main/java/com/sama_consulting/prolabmobile5`: The main source code.
-
-  - `res`: Resource files.
-
-  - `AndroidManifest.xml`: Android manifest file.
 
 ## Requirements
 
@@ -36,12 +31,13 @@ The project is structured as follows:
 
 ## Usage
 
-1. Clone the repository:
-
    ```bash
    git clone https://github.com/MAIkO26/ProlabMobileTests.git
-   Open the project in Android Studio.
-   Run the tests using the test runner.
+ ```
+
+Open the project in Android Studio.
+
+Run the tests using the test runner.
 
 
 ## Screenshots
